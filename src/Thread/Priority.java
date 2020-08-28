@@ -3,7 +3,7 @@ package Thread;
 /**
  * @Author: Daryliu
  * @Date: 2020/8/28 16:21
- * @describe: 线程调度和线程优先级
+ * @describe:线程调度和线程优先级
  *      分时调度模型：所有线程轮流使用CPU，平均分配CPU时间片
  *      抢占式调度模型：优先级高的优先，同一优先级则随机选。线程高的使用CPU时间多【Java使用抢占式】
  *
