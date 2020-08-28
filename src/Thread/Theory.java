@@ -23,10 +23,38 @@ package Thread;
 
 //两种实现多线程程序的方式
 //方式一：继承Thread类
-//      自定义类继承Thread类
-//      自定义类中重写run()方法
-//      创建对象
-//      启动线程
-public class Theory {
-    
+//      1、自定义类继承Thread类
+//      2、自定义类中重写run()方法------>不是类中的所有代码都要被线程执行，run()方法是为了包含那些需要被线程执行的代码  ||直接调用run()方法相当于普通方法的调用，所以看到的是单线程的效果
+//      3、创建对象
+//      4、启动线程
+public class Theory extends Thread {        //1、自定义类继承Thread类
+    @Override
+    public void run() {     //2、自定义类中重写run()方法
+        //一般来说，被执行的代码肯定是比较耗时的，所以需要循环来改进
+        for (int x= 0; x < 100; x++) {
+            //getName()获取线程名称
+            System.out.println(getName() + "---" + x);
+        }
+    }
+
+    public static void main(String[] args) {
+        /*Theory theory = new Theory();       //3、创建对象
+        theory.run();                       //4、启动线程
+        theory.run();
+        //直接调用run()方法相当于普通方法的调用，所以看到的是单线程的效果    想要看到多线程执行，需要用到start()方法*/
+
+        /*面试题：run()和start()的区别
+        run()仅仅封装被线程执行的代码，直接调用是普通方法（未启动线程）       可重复调用
+        start()1、首先启动了线程，2、然后由JVM去调用该线程的run()方法      不可重复调用
+        */
+
+        //获取当前main线程的名称
+        System.out.println(Thread.currentThread().getName());
+        Theory theory = new Theory();//线程0 Thread0
+        theory.setName("设置名称线程0-");
+        theory.start();
+        Theory t1 = new Theory();//线程1 Thread1
+        t1.setName("设置名称线程1-");
+        t1.start();
+    }
 }
