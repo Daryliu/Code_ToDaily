@@ -4,8 +4,7 @@ package Thread;
  * @Author: Daryliu
  * @Date: 2020/8/27 20:46
  * @param:
- * @return:
- *          JVM运行原理：
+ * @return:JVM运行原理：
  *          由java命令启动JVM，JVM启动相当于启动一个进程；随后由该进程创建一个主线程去调用main方法。
  *
  *          JVM虚拟机的启动是多线程的：（最低两个线程）
