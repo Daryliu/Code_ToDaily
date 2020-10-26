@@ -1,0 +1,36 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="JavaDoc" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="TOP_LEVEL_CLASS_OPTIONS">
+        <value>
+          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+          <option name="REQUIRED_TAGS" value="" />
+        </value>
+      </option>
+      <option name="INNER_CLASS_OPTIONS">
+        <value>
+          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+          <option name="REQUIRED_TAGS" value="" />
+        </value>
+      </option>
+      <option name="METHOD_OPTIONS">
+        <value>
+          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+          <option name="REQUIRED_TAGS" value="@return@param@throws or @exception" />
+        </value>
+      </option>
+      <option name="FIELD_OPTIONS">
+        <value>
+          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+          <option name="REQUIRED_TAGS" value="" />
+        </value>
+      </option>
+      <option name="IGNORE_DEPRECATED" value="false" />
+      <option name="IGNORE_JAVADOC_PERIOD" value="true" />
+      <option name="IGNORE_DUPLICATED_THROWS" value="false" />
+      <option name="IGNORE_POINT_TO_ITSELF" value="false" />
+      <option name="myAdditionalJavadocTags" value="Author:,Date:,param:,return:,describe:,describe:线程生命周期,describe:线程控制,describe:线程调度和线程优先级,return:JVM运行原理：,describe:线程的生命周期,return:多线程实现方式二,return:多线程实现方式二：声明类实现runnable接口,param：继承Thread类,return:多线程实现方式二：声明类实现runnable接口-----------解决了单继承的局限性；适合于多个相同的程序代码解决同一个资源的情况，把线程同程序的代码、数据分离，体现了面向对象的设计思想,return:多线程实现方式二：声明类实现runnable接口-----------解决了单继承的局限性；适合于多个相同的程序代码解决同一个资源的情况，把线程同程序的代码、数据分离，体现了面向对象的设计思想（见第三步）,return:线程程序练习：某电影院共100张票，三个窗口卖，设计程序模拟卖票,return:“线程安全问题”（1、是否是多线程环境2、是否是共享数据3、是否有多条语句操作共享数据）,param:为了看清在哪里加锁和释放锁,param:为了看清在哪里加锁和释放锁：JDK5之后使用锁对象Lock,param:为了看清在哪里加锁和释放锁：JDK5之后使用锁对象Lock（提供了比synchronized方法更多的锁定操作）,return:lock()获取锁;unlock()释放锁,describe:ReentrantLock是Lock的实现类,param:死锁问题：多个线程各自占有一些共享资源，并且互相等待其他线程占有的资源才能进行，而导致两个或者多个线程都在等待对方释放资源，都停止执行的情形。,param:解决死锁：生产者消费者问题,param:线程间通信,param:线程间通信：生产者---消费者,param:线程间通信：生产者---（资源）---消费者,param:线程间通信：（不同种类的线程对同一类资源操作）生产者---（资源）---消费者,param:线程间通信：（不同种类的线程对同一个资源操作）生产者---（资源）---消费者,param:线程间通信：（不同种类的线程对同一个资源操作）生产者（设置线程）---（资源）---(获取线程)消费者,param:线程间通信：（不同种类的线程对同一个资源操作）生产者（设置线程）---（同一资源）---(获取线程)消费者,param:线程间通信：（不同种类的线程对同一个资源操作）生产者（设置线程）---（同一资源）缓冲区---(获取线程)消费者,describe:线程间通信2,describe:线程间通信2--在前面的基础上解决线程安全问题,return:而今虽然数据安全了，但是执行的时候一下出来一大片而且不停止,return:而今虽然数据安全了，但是执行的时候一下出来一大片而且不停止------&gt;可通过“等待唤醒机制”解决,return:而今虽然数据安全了，但是执行的时候一下出来一大片而且不停止------&gt;可通过“等待唤醒机制”解决(wait()、notify()函数),describe:线程组：直接对一批线程进行分类管理（虽然Java没有直接操作线程的类，但是可以直接操作线程组）" />
+    </inspection_tool>
+  </profile>
+</component>
